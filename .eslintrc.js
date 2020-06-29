@@ -1,6 +1,8 @@
 module.exports = {
-  extends: 'react-app',
+  extends: ['react-app', 'prettier'],
+  plugins: ['prettier'],
   rules: {
+    'prettier/prettier': 'warn',
     'import/order': [
       'error',
       {
@@ -13,4 +15,4 @@ module.exports = {
       },
     ],
   },
-};
+}
