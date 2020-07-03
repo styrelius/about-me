@@ -18,21 +18,20 @@ const ShiftingBackground = keyframes`
    background: ${salmon}
    };
 `
-const backgroundPadding = 24
+const bgPaddingTopBottom = 16
 
 const Background = styled.div`
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  padding: ${backgroundPadding}px;
-  animation: ${ShiftingBackground} 40s infinite linear;
+  padding: ${bgPaddingTopBottom}px 24px;
+  animation: ${ShiftingBackground} 80s infinite linear;
 `
 const Page = styled.div`
   background: ${beige};
   width: 100%;
-  min-height: calc(100vh - (${backgroundPadding}px * 2));
+  min-height: calc(100vh - (${bgPaddingTopBottom}px * 2));
   padding: 32px 16px;
-  border-radius: 4px;
 `
 
 export function App() {
