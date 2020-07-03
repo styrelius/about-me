@@ -24,7 +24,7 @@ const Background = styled.div`
   height: 100%;
   width: 100%;
   padding: ${backgroundPadding}px;
-  animation: ${ShiftingBackground} 20s infinite linear;
+  animation: ${ShiftingBackground} 40s infinite linear;
 `
 const Page = styled.div`
   background: ${beige};
