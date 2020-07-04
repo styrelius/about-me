@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components/macro'
 
-import { colors } from './styles'
+import { colors, fonts } from './styles'
 
 export const GlobalStyles = createGlobalStyle({
   '*': {
@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle({
     boxSizing: 'border-box',
   },
   body: {
-    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    fontFamily: fonts.helveticaNeue,
     color: colors.black,
     fontSize: 16,
     fontWeight: 200,

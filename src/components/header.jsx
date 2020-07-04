@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 
 import ellen from '../assets/ellen.jpg'
 import { mobileScreen } from '../styles/media-queries'
+import { fonts } from '../styles/styles'
 
 const Container = styled.section({
   padding: '16px 0',
@@ -27,7 +28,7 @@ const HeadingsWrapper = styled.div({
 })
 
 const Heading = styled.h1({
-  fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
+  fontFamily: fonts.playfairDisplay,
   fontSize: 32,
   fontWeight: 200,
   [mobileScreen]: {
@@ -36,7 +37,7 @@ const Heading = styled.h1({
 })
 
 const SubHeading = styled.h2({
-  fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
+  fontFamily: fonts.playfairDisplay,
   fontSize: 16,
   fontWeight: 200,
   textTransform: 'uppercase',

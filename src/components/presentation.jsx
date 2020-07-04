@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import { mobileScreen } from '../styles/media-queries'
+import { fonts } from '../styles/styles'
 
 const Container = styled.section({
   width: '100%',
@@ -16,7 +17,7 @@ const PresentationText = styled.p({
   width: 480,
   maxWidth: '100%',
   padding: 4,
-  fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily: fonts.helveticaNeue,
   fontSize: 18,
   fontWeight: 200,
   lineHeight: 1.2,
@@ -27,7 +28,7 @@ const PresentationText = styled.p({
 })
 
 const FirstWords = styled.span({
-  fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
+  fontFamily: fonts.playfairDisplay,
 })
 
 const TechText = styled(PresentationText)({

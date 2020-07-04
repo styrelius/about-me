@@ -6,3 +6,8 @@ export const colors = {
   lavender: '#E9E7F2',
   salmon: '#FCEBDF',
 }
+
+export const fonts = {
+  helveticaNeue: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  playfairDisplay: '"Playfair Display", Georgia, "Times New Roman", serif',
+}
