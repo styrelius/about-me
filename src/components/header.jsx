@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import ellen from '../assets/ellen.jpg'
+import { mobileScreen } from '../styles/media-queries'
 
 const Container = styled.section({
-  padding: '32px 0',
+  padding: '16px 0',
   display: 'flex',
   justifyContent: 'center',
 })
@@ -15,6 +16,9 @@ const ContentsWrapper = styled.div({
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
+  [mobileScreen]: {
+    justifyContent: 'center',
+  },
 })
 
 const HeadingsWrapper = styled.div({
@@ -25,12 +29,17 @@ const Heading = styled.h1({
   fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
   fontSize: 40,
   fontWeight: 200,
+  [mobileScreen]: {
+    fontSize: 32,
+  },
 })
 
 const SubHeading = styled.h2({
   fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
-  fontSize: 24,
+  fontSize: 16,
   fontWeight: 200,
+  textTransform: 'uppercase',
+  lineHeight: 2,
 })
 
 const ImageWrapper = styled.div({
