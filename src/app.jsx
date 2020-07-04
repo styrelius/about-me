@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components/macro'
 import { GlobalStyles } from './styles/global-styles'
 import { colors } from './styles/styles'
 import { Header } from './components/header'
+import { Presentation } from './components/presentation'
 
 const { beige, lavender, salmon } = colors
 
@@ -41,6 +42,7 @@ export function App() {
       <Background>
         <Page>
           <Header />
+          <Presentation />
         </Page>
       </Background>
     </>
