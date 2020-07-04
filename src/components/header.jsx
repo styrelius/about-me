@@ -11,13 +11,14 @@ const Container = styled.section({
 })
 
 const ContentsWrapper = styled.div({
-  width: 400,
+  width: 380,
   maxWidth: '100%',
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
   [mobileScreen]: {
     justifyContent: 'center',
+    alignItems: 'flex-end',
   },
 })
 
@@ -27,10 +28,10 @@ const HeadingsWrapper = styled.div({
 
 const Heading = styled.h1({
   fontFamily: '"Playfair Display", Georgia, "Times New Roman", serif',
-  fontSize: 40,
+  fontSize: 32,
   fontWeight: 200,
   [mobileScreen]: {
-    fontSize: 32,
+    fontSize: 24,
   },
 })
 
@@ -40,6 +41,9 @@ const SubHeading = styled.h2({
   fontWeight: 200,
   textTransform: 'uppercase',
   lineHeight: 2,
+  [mobileScreen]: {
+    fontSize: 14,
+  },
 })
 
 const ImageWrapper = styled.div({
