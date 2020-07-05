@@ -8,6 +8,9 @@ const { black, darkGrey } = colors
 const Container = styled.section({
   width: 480,
   maxWidth: '100%',
+  height: 88,
+  display: 'flex',
+  alignItems: 'center',
 })
 
 const Link = styled.a({
