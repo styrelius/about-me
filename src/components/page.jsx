@@ -13,7 +13,7 @@ const Container = styled.div`
   background: ${colors.beige};
   width: 100%;
   min-height: calc(100vh - (${({ appPadding }) => appPadding}px * 2));
-  padding: 32px 48px;
+  padding: 32px 72px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

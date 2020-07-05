@@ -6,9 +6,8 @@ import { fonts, colors } from '../styles/styles'
 const { black, darkGrey } = colors
 
 const Container = styled.section({
-  width: 480,
-  maxWidth: '100%',
-  height: 88,
+  width: '100%',
+  padding: '32px 0',
   display: 'flex',
   alignItems: 'center',
 })
