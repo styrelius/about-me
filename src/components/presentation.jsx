@@ -47,8 +47,8 @@ export function Presentation() {
         nerd more than once.
       </PresentationText>
       <TechText>
-        Right now I'm mainly building things with React, TypeScript and I think CSS-in-JS libraries
-        like styled-components are awesome.
+        Right now I'm mainly building things with React and TypeScript, and I think CSS-in-JS
+        libraries like styled-components are awesome.
       </TechText>
     </Container>
   )
