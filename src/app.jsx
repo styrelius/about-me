@@ -9,13 +9,13 @@ const { lavender, salmon } = colors
 
 const ShiftingBackground = keyframes`
   0% {
-   background: ${salmon}
+   background: ${lavender}
    };
    50% {
-     background: ${lavender}
+     background: ${salmon}
    };
    100% {
-   background: ${salmon}
+   background: ${lavender}
    };
 `
 const paddingTopBottom = 16
@@ -25,7 +25,7 @@ const Background = styled.div`
   height: 100%;
   width: 100%;
   padding: ${paddingTopBottom}px 24px;
-  animation: ${ShiftingBackground} 80s infinite linear;
+  animation: ${ShiftingBackground} 120s infinite linear;
 `
 
 export function App() {
