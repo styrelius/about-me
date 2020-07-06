@@ -16,7 +16,7 @@ const Container = styled.section({
 const PresentationText = styled.p({
   width: 480,
   maxWidth: '100%',
-  padding: 4,
+  padding: '4px 0',
   fontFamily: fonts.helveticaNeue,
   fontSize: 18,
   fontWeight: 200,
@@ -31,13 +31,6 @@ const FirstWords = styled.span({
   fontFamily: fonts.playfairDisplay,
 })
 
-const TechText = styled(PresentationText)({
-  fontSize: 14,
-  [mobileScreen]: {
-    fontSize: 14,
-  },
-})
-
 export function Presentation() {
   return (
     <Container>
@@ -46,10 +39,6 @@ export function Presentation() {
         and a Bachelor of Fine Arts. Passionate about clean and simple code. Have been called CSS
         nerd more than once.
       </PresentationText>
-      <TechText>
-        Right now I'm mainly building things with React and TypeScript, and I think CSS-in-JS
-        libraries like styled-components are awesome.
-      </TechText>
     </Container>
   )
 }
