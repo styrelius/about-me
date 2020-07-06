@@ -38,7 +38,7 @@ const Heading = styled.h1({
 
 const SubHeading = styled.h2({
   fontFamily: fonts.playfairDisplay,
-  fontSize: 16,
+  fontSize: 14,
   fontWeight: 200,
   textTransform: 'uppercase',
   lineHeight: 2,

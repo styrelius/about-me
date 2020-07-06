@@ -14,12 +14,16 @@ const Container = styled.section({
 
 const Text = styled.p({
   fontFamily: fonts.playfairDisplay,
+  fontSize: 18,
 })
 
+// TODO: add border-bottom and remove text-decoration
 const EMail = styled.a({
   fontFamily: fonts.helveticaNeue,
   color: black,
   fontSize: 18,
+  textDecoration: 'none',
+  borderBottom: '1px solid' + black,
   ':hover, :focus': {
     color: darkGrey,
     outline: 'none',

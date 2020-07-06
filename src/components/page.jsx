@@ -16,18 +16,22 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   ${mobileScreen} {
     padding: 48px 16px;
   }
+`
+const TopOfPage = styled.div`
+  max-width: 100%;
 `
 
 export function Page({ appPaddingTopBottom }) {
   return (
     <Container appPadding={appPaddingTopBottom}>
-      <div>
+      <TopOfPage>
         <Header />
         <Presentation />
-      </div>
+      </TopOfPage>
       <LinksAndContact />
     </Container>
   )

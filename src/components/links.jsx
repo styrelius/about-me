@@ -6,18 +6,20 @@ import { fonts, colors } from '../styles/styles'
 const { black, darkGrey } = colors
 
 const Container = styled.section({
-  width: '100%',
-  padding: '32px 0',
+  width: 160,
+  maxWidth: '100%',
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'space-between',
 })
 
 const Link = styled.a({
-  padding: 8,
   fontFamily: fonts.playfairDisplay,
   color: black,
   fontSize: 14,
   textTransform: 'uppercase',
+  textDecoration: 'none',
+  borderBottom: '1px solid' + black,
   ':hover, :focus': {
     color: darkGrey,
     outline: 'none',
@@ -34,8 +36,7 @@ export function Links() {
     <Container>
       {links.map(({ url, name }) => (
         <Link href={url} target="_blank" key={url}>
-          {'> '}
-          {name}
+          {'> ' + name}
         </Link>
       ))}
     </Container>
