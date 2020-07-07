@@ -17,13 +17,12 @@ const Text = styled.p({
   fontSize: 18,
 })
 
-// TODO: add border-bottom and remove text-decoration
 const EMail = styled.a({
   fontFamily: fonts.helveticaNeue,
   color: black,
   fontSize: 18,
   textDecoration: 'none',
-  borderBottom: '1px solid' + black,
+  borderBottom: '1px solid' + darkGrey,
   ':hover, :focus': {
     color: darkGrey,
     outline: 'none',
@@ -34,8 +33,7 @@ export function GetInTouch() {
   return (
     <Container>
       <Text>
-        Get in touch?{' '}
-        <EMail href="mailto:ellen.styrelius@gmail.com">ellen.styrelius@gmail.com</EMail>
+        Get in touch? <EMail href="mailto:hello@ellenstyrelius.net">hello@ellenstyrelius.net</EMail>
       </Text>
     </Container>
   )

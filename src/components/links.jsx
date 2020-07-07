@@ -19,7 +19,7 @@ const Link = styled.a({
   fontSize: 14,
   textTransform: 'uppercase',
   textDecoration: 'none',
-  borderBottom: '1px solid' + black,
+  borderBottom: '1px solid' + darkGrey,
   ':hover, :focus': {
     color: darkGrey,
     outline: 'none',

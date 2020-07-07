@@ -35,9 +35,12 @@ export function Presentation() {
   return (
     <Container>
       <PresentationText>
-        <FirstWords>Hi, I'm Ellen</FirstWords> - developer with a deep interest in all things UI/UX
-        and a Bachelor of Fine Arts. Passionate about clean and simple code. Have been called CSS
-        nerd more than once.
+        <FirstWords>Hi, I'm Ellen</FirstWords> - developer obsessed with most things UI/UX and a
+        Bachelor of Fine Arts. Passionate about clean and simple code. Have been called CSS nerd
+        more than once.
+      </PresentationText>
+      <PresentationText>
+        Huge fan of component driven development and of writing tests when they're needed.
       </PresentationText>
     </Container>
   )
