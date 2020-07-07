@@ -33,8 +33,7 @@ export function GetInTouch() {
   return (
     <Container>
       <Text>
-        Get in touch?{' '}
-        <EMail href="mailto:ellen.styrelius@gmail.com">ellen.styrelius@gmail.com</EMail>
+        Get in touch? <EMail href="mailto:hello@ellenstyrelius.net">hello@ellenstyrelius.net</EMail>
       </Text>
     </Container>
   )
