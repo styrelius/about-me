@@ -32,8 +32,8 @@ export function Page({ appPaddingTopBottom }) {
       <TopOfPage>
         <Header />
         <Presentation />
+        <Highlights />
       </TopOfPage>
-      <Highlights />
       <LinksAndContact />
     </Container>
   )
