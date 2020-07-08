@@ -11,3 +11,11 @@ export const fonts = {
   helveticaNeue: '"Helvetica Neue", Helvetica, Arial, sans-serif',
   playfairDisplay: '"Playfair Display", Georgia, "Times New Roman", serif',
 }
+
+export const fontSizes = {
+  sm: 14,
+  md: 18,
+  lg: 32,
+  mobileMd: 16,
+  mobileLg: 24,
+}

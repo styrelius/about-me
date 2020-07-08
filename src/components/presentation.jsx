@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import { mobileScreen } from '../styles/media-queries'
-import { fonts } from '../styles/styles'
+import { fonts, fontSizes } from '../styles/styles'
 
 const Container = styled.section({
   width: '100%',
@@ -18,12 +18,12 @@ const PresentationText = styled.p({
   maxWidth: '100%',
   padding: '4px 0',
   fontFamily: fonts.helveticaNeue,
-  fontSize: 18,
+  fontSize: fontSizes.md,
   fontWeight: 200,
   lineHeight: 1.2,
   letterSpacing: 0.3,
   [mobileScreen]: {
-    fontSize: 16,
+    fontSize: fontSizes.mobileMd,
   },
 })
 

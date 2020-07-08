@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 
 import ellen from '../assets/ellen.jpg'
 import { mobileScreen } from '../styles/media-queries'
-import { fonts } from '../styles/styles'
+import { fonts, fontSizes } from '../styles/styles'
 
 const Container = styled.section({
   padding: '16px 0',
@@ -29,21 +29,21 @@ const HeadingsWrapper = styled.div({
 
 const Heading = styled.h1({
   fontFamily: fonts.playfairDisplay,
-  fontSize: 32,
+  fontSize: fontSizes.lg,
   fontWeight: 200,
   [mobileScreen]: {
-    fontSize: 24,
+    fontSize: fontSizes.mobileLg,
   },
 })
 
 const SubHeading = styled.h2({
   fontFamily: fonts.playfairDisplay,
-  fontSize: 14,
+  fontSize: fontSizes.sm,
   fontWeight: 200,
   textTransform: 'uppercase',
   lineHeight: 2,
   [mobileScreen]: {
-    fontSize: 14,
+    fontSize: fontSizes.sm,
   },
 })
 

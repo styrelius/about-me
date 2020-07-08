@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { fonts, colors } from '../styles/styles'
+import { colors, fonts, fontSizes } from '../styles/styles'
 
 const { black, darkGrey } = colors
 
@@ -14,7 +14,7 @@ const Container = styled.section({
 const Header = styled.h4({
   padding: 4,
   fontFamily: fonts.playfairDisplay,
-  fontSize: 14,
+  fontSize: fontSizes.sm,
   fontWeight: 200,
   textTransform: 'uppercase',
 })
@@ -22,7 +22,7 @@ const Header = styled.h4({
 const Project = styled.div({
   padding: 4,
   fontFamily: fonts.playfairDisplay,
-  fontSize: 18,
+  fontSize: fontSizes.md,
 })
 
 const Link = styled.a({
