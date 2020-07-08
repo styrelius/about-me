@@ -7,13 +7,13 @@ import { mobileScreen } from '../styles/media-queries'
 const { black, darkGrey } = colors
 
 const Container = styled.section({
-  width: 800,
+  width: 640,
   maxWidth: '100%',
-  padding: '48px 0',
+  padding: '64px 0',
 })
 
 const Header = styled.h4({
-  padding: 4,
+  padding: '8px 4px',
   fontFamily: fonts.playfairDisplay,
   fontSize: fontSizes.sm,
   fontWeight: 200,

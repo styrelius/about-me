@@ -5,7 +5,8 @@ import { mobileScreen } from '../styles/media-queries'
 import { fonts, fontSizes } from '../styles/styles'
 
 const Container = styled.section({
-  width: '100%',
+  width: 640,
+  maxWidth: '100%',
   padding: '24px 0',
   display: 'flex',
   flexDirection: 'column',
@@ -14,8 +15,7 @@ const Container = styled.section({
 })
 
 const PresentationText = styled.p({
-  width: 480,
-  maxWidth: '100%',
+  width: '100%',
   padding: '4px 0',
   fontFamily: fonts.helveticaNeue,
   fontSize: fontSizes.md,
