@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import { colors, fonts, fontSizes } from '../styles/styles'
+import { mobileScreen } from '../styles/media-queries'
 
 const { black, darkGrey } = colors
 
@@ -23,6 +24,9 @@ const Project = styled.div({
   padding: 4,
   fontFamily: fonts.playfairDisplay,
   fontSize: fontSizes.md,
+  [mobileScreen]: {
+    fontSize: fontSizes.mobileMd,
+  },
 })
 
 const Link = styled.a({
