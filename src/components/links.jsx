@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { fonts, colors } from '../styles/styles'
+import { colors, fonts, fontSizes } from '../styles/styles'
 
 const { black, darkGrey } = colors
 
@@ -16,12 +16,13 @@ const Container = styled.section({
 const Link = styled.a({
   fontFamily: fonts.playfairDisplay,
   color: black,
-  fontSize: 14,
+  fontSize: fontSizes.sm,
   textTransform: 'uppercase',
   textDecoration: 'none',
-  borderBottom: '1px solid' + darkGrey,
+  borderBottom: '1px solid' + black,
   ':hover, :focus': {
     color: darkGrey,
+    borderColor: darkGrey,
     outline: 'none',
   },
 })

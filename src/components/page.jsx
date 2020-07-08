@@ -13,7 +13,7 @@ const Container = styled.div`
   background: ${colors.beige};
   width: 100%;
   min-height: calc(100vh - (${({ appPadding }) => appPadding}px * 2));
-  padding: 32px 72px;
+  padding: 48px 72px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,8 +32,8 @@ export function Page({ appPaddingTopBottom }) {
       <TopOfPage>
         <Header />
         <Presentation />
+        <Highlights />
       </TopOfPage>
-      <Highlights />
       <LinksAndContact />
     </Container>
   )

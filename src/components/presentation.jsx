@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import { mobileScreen } from '../styles/media-queries'
-import { fonts } from '../styles/styles'
+import { fonts, fontSizes } from '../styles/styles'
 
 const Container = styled.section({
-  width: '100%',
+  width: 640,
+  maxWidth: '100%',
   padding: '24px 0',
   display: 'flex',
   flexDirection: 'column',
@@ -14,16 +15,15 @@ const Container = styled.section({
 })
 
 const PresentationText = styled.p({
-  width: 480,
-  maxWidth: '100%',
+  width: '100%',
   padding: '4px 0',
   fontFamily: fonts.helveticaNeue,
-  fontSize: 18,
+  fontSize: fontSizes.md,
   fontWeight: 200,
   lineHeight: 1.2,
   letterSpacing: 0.3,
   [mobileScreen]: {
-    fontSize: 16,
+    fontSize: fontSizes.mobileMd,
   },
 })
 
