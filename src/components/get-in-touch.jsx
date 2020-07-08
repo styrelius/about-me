@@ -22,9 +22,10 @@ const EMail = styled.a({
   color: black,
   fontSize: 18,
   textDecoration: 'none',
-  borderBottom: '1px solid' + darkGrey,
+  borderBottom: '1px solid' + black,
   ':hover, :focus': {
     color: darkGrey,
+    borderColor: darkGrey,
     outline: 'none',
   },
 })
