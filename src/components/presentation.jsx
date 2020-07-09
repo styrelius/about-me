@@ -5,7 +5,7 @@ import { mobileScreen } from '../styles/media-queries'
 import { fonts, fontSizes } from '../styles/styles'
 
 const Container = styled.section({
-  width: 640,
+  width: 560,
   maxWidth: '100%',
   padding: '24px 0',
   display: 'flex',
@@ -38,9 +38,6 @@ export function Presentation() {
         <FirstWords>Hi, I'm Ellen</FirstWords> - developer obsessed with most things UI/UX and a
         Bachelor of Fine Arts. Passionate about clean and simple code. Have been called CSS nerd
         more than once.
-      </PresentationText>
-      <PresentationText>
-        Huge fan of component driven development and of writing tests when they're needed.
       </PresentationText>
     </Container>
   )
