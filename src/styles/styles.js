@@ -14,7 +14,7 @@ export const fonts = {
 
 export const fontSizes = {
   sm: 14,
-  md: 18,
+  md: 20,
   lg: 32,
   mobileMd: 16,
   mobileLg: 24,
