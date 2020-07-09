@@ -7,8 +7,6 @@ const { black, darkGrey } = colors
 
 const Container = styled.section({
   width: '100%',
-  display: 'flex',
-  justifyContent: 'center',
 })
 
 const Text = styled.p({
