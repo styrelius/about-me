@@ -1,3 +1,9 @@
-## Ellen Styrélius personal web site
+## [ellenstyrelius.net](https://www.ellenstyrelius.net/)
 
-coming soon :)
+<br />
+<br />
+<br />
+
+---
+
+P.S. I regret not building this with TypeScript :(
