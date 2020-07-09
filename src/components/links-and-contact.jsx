@@ -5,7 +5,7 @@ import { Links } from './links'
 import { GetInTouch } from './get-in-touch'
 
 const Container = styled.div({
-  width: 640,
+  width: 560,
   maxWidth: '100%',
   height: 240,
   padding: '64px 0',
