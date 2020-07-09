@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components/macro'
 import { Page } from './components/page'
 import { GlobalStyles } from './styles/global-styles'
 import { colors } from './styles/styles'
+import { mobileScreen } from './styles/media-queries'
 
 const { lavender, salmon } = colors
 
@@ -26,6 +27,9 @@ const Background = styled.div`
   width: 100%;
   padding: ${paddingTopBottom}px 24px;
   animation: ${ShiftingBackground} 120s infinite linear;
+  ${mobileScreen} {
+    padding: ${paddingTopBottom}px 12px;
+  }
 `
 
 export function App() {
