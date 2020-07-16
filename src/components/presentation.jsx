@@ -35,9 +35,9 @@ export function Presentation() {
   return (
     <Container>
       <PresentationText>
-        <FirstWords>Hi, I'm Ellen</FirstWords> - developer obsessed with most things UI/UX and a
-        Bachelor of Fine Arts. Passionate about clean and simple code. Have been called CSS nerd
-        more than once.
+        <FirstWords>Hi, I'm Ellen</FirstWords> - developer obsessed with most things UI/UX.
+        Passionate about clean, readable, testable code. I have a Bachelor of Fine Arts, and have
+        been called CSS nerd more than once.
       </PresentationText>
     </Container>
   )
