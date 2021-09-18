@@ -5,6 +5,12 @@ import { fonts, fontSizes, linkStyles } from '../styles/styles'
 
 const { helveticaNeue } = fonts
 
+const Container = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+})
+
 const Link = styled.a({
   ...linkStyles,
   fontSize: fontSizes.sm,
@@ -14,6 +20,7 @@ const Link = styled.a({
 const Divider = styled.span({
   fontFamily: helveticaNeue,
   fontSize: fontSizes.md,
+  padding: '0 4px',
 })
 
 const links = [
@@ -22,12 +29,16 @@ const links = [
 ]
 
 export function LinksList() {
-  return links.map(({ url, name }, index) => (
-    <Fragment key={url}>
-      <Link href={url} target="_blank">
-        {name}
-      </Link>
-      {index < links.length - 1 && <Divider> | </Divider>}
-    </Fragment>
-  ))
+  return (
+    <Container>
+      {links.map(({ url, name }, index) => (
+        <Fragment key={url}>
+          <Link href={url} target="_blank">
+            {name}
+          </Link>
+          {index < links.length - 1 && <Divider>|</Divider>}
+        </Fragment>
+      ))}
+    </Container>
+  )
 }

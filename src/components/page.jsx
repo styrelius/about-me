@@ -32,9 +32,9 @@ export function Page({ appPaddingTopBottom }) {
       <TopOfPage>
         <Header />
         <Presentation />
-        <LinksList />
       </TopOfPage>
       <GetInTouch />
+      <LinksList />
     </Container>
   )
 }
