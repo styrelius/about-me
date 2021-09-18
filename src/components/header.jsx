@@ -5,6 +5,8 @@ import ellen from '../assets/ellen.jpg'
 import { mobileScreen } from '../styles/media-queries'
 import { fonts, fontSizes } from '../styles/styles'
 
+const { playfairDisplay, helveticaNeue } = fonts
+
 const Container = styled.section({
   padding: '16px 0',
   display: 'flex',
@@ -28,7 +30,7 @@ const HeadingsWrapper = styled.div({
 })
 
 const Heading = styled.h1({
-  fontFamily: fonts.playfairDisplay,
+  fontFamily: playfairDisplay,
   fontSize: fontSizes.lg,
   fontWeight: 200,
   [mobileScreen]: {
@@ -37,7 +39,7 @@ const Heading = styled.h1({
 })
 
 const SubHeading = styled.h2({
-  fontFamily: fonts.playfairDisplay,
+  fontFamily: helveticaNeue,
   fontSize: fontSizes.sm,
   fontWeight: 200,
   textTransform: 'uppercase',
@@ -65,7 +67,7 @@ export function Header() {
         </ImageWrapper>
         <HeadingsWrapper>
           <Heading>Ellen Styrélius</Heading>
-          <SubHeading>web developer</SubHeading>
+          <SubHeading>front-end web developer</SubHeading>
         </HeadingsWrapper>
       </ContentsWrapper>
     </Container>
