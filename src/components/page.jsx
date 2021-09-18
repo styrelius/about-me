@@ -6,7 +6,7 @@ import { mobileScreen } from '../styles/media-queries'
 
 import { Header } from './header'
 import { Presentation } from './presentation'
-import { Links } from './links'
+import { LinksList } from './links-list'
 import { GetInTouch } from './get-in-touch'
 
 const Container = styled.div`
@@ -32,7 +32,7 @@ export function Page({ appPaddingTopBottom }) {
       <TopOfPage>
         <Header />
         <Presentation />
-        <Links />
+        <LinksList />
       </TopOfPage>
       <GetInTouch />
     </Container>
