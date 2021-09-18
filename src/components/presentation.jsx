@@ -41,9 +41,9 @@ export function Presentation() {
   return (
     <Container>
       <PresentationText>
-        <FirstWords>Hi, I'm Ellen</FirstWords> - web developer obsessed with most things UI/UX.
-        Passionate about clean, readable, testable code. I have a Bachelor of Fine Arts, and have
-        been called CSS nerd more than once.
+        <FirstWords>Hi, I'm Ellen</FirstWords> - web developer obsessed with most things UX.
+        Passionate about clean, readable, testable code, and elegant user-friendly interfaces. I
+        also have a Bachelor of Fine Arts.
         <PresentationText>
           If I get to choose I prefer working with React, TypeScript and some CSS-in-JS solution.
         </PresentationText>
