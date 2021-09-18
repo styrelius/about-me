@@ -15,7 +15,6 @@ const Container = styled.div({
 const Link = styled.a({
   ...linkStyles,
   fontSize: fontSizes.sm,
-  textTransform: 'uppercase',
 })
 
 const Divider = styled.span({
