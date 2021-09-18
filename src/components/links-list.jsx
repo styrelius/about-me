@@ -24,7 +24,7 @@ const links = [
 export function LinksList() {
   return links.map(({ url, name }, index) => (
     <Fragment key={url}>
-      <Link href={url} target="_blank" key={url}>
+      <Link href={url} target="_blank">
         {name}
       </Link>
       {index < links.length - 1 && <Divider> | </Divider>}
