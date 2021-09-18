@@ -6,7 +6,8 @@ import { mobileScreen } from '../styles/media-queries'
 
 import { Header } from './header'
 import { Presentation } from './presentation'
-import { LinksAndContact } from './links-and-contact'
+import { Links } from './links'
+import { GetInTouch } from './get-in-touch'
 
 const Container = styled.div`
   background: ${colors.beige};
@@ -31,8 +32,9 @@ export function Page({ appPaddingTopBottom }) {
       <TopOfPage>
         <Header />
         <Presentation />
+        <Links />
       </TopOfPage>
-      <LinksAndContact />
+      <GetInTouch />
     </Container>
   )
 }

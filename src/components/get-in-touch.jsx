@@ -5,10 +5,6 @@ import { colors, fonts, fontSizes } from '../styles/styles'
 
 const { black, darkGrey } = colors
 
-const Container = styled.section({
-  width: '100%',
-})
-
 const Text = styled.p({
   fontFamily: fonts.playfairDisplay,
   fontSize: fontSizes.md,
@@ -29,10 +25,8 @@ const EMail = styled.a({
 
 export function GetInTouch() {
   return (
-    <Container>
-      <Text>
-        Get in touch? <EMail href="mailto:hello@ellenstyrelius.net">hello@ellenstyrelius.net</EMail>
-      </Text>
-    </Container>
+    <Text>
+      Get in touch? <EMail href="mailto:hello@ellenstyrelius.net">hello@ellenstyrelius.net</EMail>
+    </Text>
   )
 }
