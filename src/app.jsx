@@ -25,7 +25,7 @@ const Background = styled.div`
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  padding: ${paddingTopBottom}px 24px;
+  padding: ${paddingTopBottom}px 32px;
   animation: ${ShiftingBackground} 120s infinite linear;
   ${mobileScreen} {
     padding: ${paddingTopBottom}px 12px;
