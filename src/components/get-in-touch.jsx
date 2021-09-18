@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { colors, fonts, fontSizes } from '../styles/styles'
-
-const { black, darkGrey } = colors
+import { fonts, fontSizes, linkStyles } from '../styles/styles'
 
 const Text = styled.p({
   fontFamily: fonts.playfairDisplay,
@@ -11,16 +9,8 @@ const Text = styled.p({
 })
 
 const EMail = styled.a({
-  fontFamily: fonts.helveticaNeue,
-  color: black,
+  ...linkStyles,
   fontSize: fontSizes.md,
-  textDecoration: 'none',
-  borderBottom: '1px solid' + black,
-  ':hover, :focus': {
-    color: darkGrey,
-    borderColor: darkGrey,
-    outline: 'none',
-  },
 })
 
 export function GetInTouch() {

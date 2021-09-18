@@ -1,23 +1,14 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components/macro'
 
-import { colors, fonts, fontSizes } from '../styles/styles'
+import { fonts, fontSizes, linkStyles } from '../styles/styles'
 
-const { black, darkGrey } = colors
 const { helveticaNeue } = fonts
 
 const Link = styled.a({
-  fontFamily: helveticaNeue,
-  color: black,
+  ...linkStyles,
   fontSize: fontSizes.sm,
-  borderBottom: '1px solid' + black,
   textTransform: 'uppercase',
-  textDecoration: 'none',
-  ':hover, :focus': {
-    color: darkGrey,
-    borderColor: darkGrey,
-    outline: 'none',
-  },
 })
 
 const Divider = styled.span({

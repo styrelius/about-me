@@ -2,10 +2,9 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import { mobileScreen } from '../styles/media-queries'
-import { fonts, fontSizes, colors } from '../styles/styles'
+import { fonts, fontSizes, linkStyles } from '../styles/styles'
 
 const { helveticaNeue } = fonts
-const { black, darkGrey } = colors
 
 const Container = styled.section({
   width: 560,
@@ -35,14 +34,7 @@ const FirstWords = styled.span({
 })
 
 const Link = styled.a({
-  fontFamily: helveticaNeue,
-  borderBottom: '1px solid' + black,
-  color: black,
-  textDecoration: 'none',
-  ':hover': {
-    color: darkGrey,
-    cursor: 'pointer',
-  },
+  ...linkStyles,
 })
 
 export function Presentation() {

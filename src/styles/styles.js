@@ -19,3 +19,18 @@ export const fontSizes = {
   mobileMd: 16,
   mobileLg: 24,
 }
+
+const { black, darkGrey } = colors
+const { helveticaNeue } = fonts
+
+export const linkStyles = {
+  fontFamily: helveticaNeue,
+  color: black,
+  textDecoration: 'none',
+  borderBottom: '1px solid' + black,
+  ':hover, :focus': {
+    color: darkGrey,
+    borderColor: darkGrey,
+    outline: 'none',
+  },
+}
