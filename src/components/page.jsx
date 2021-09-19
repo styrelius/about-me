@@ -8,6 +8,8 @@ import { Header } from './header'
 import { Presentation } from './presentation'
 import { Footer } from './footer'
 
+export const PAGE_CONTENT_WRAPPER_WIDTH = 560
+
 const Container = styled.div`
   background: ${colors.beige};
   width: 100%;
@@ -21,18 +23,19 @@ const Container = styled.div`
     padding: 48px 16px;
   }
 `
-const TopOfPage = styled.div`
-  max-width: 100%;
-`
+const ContentWrapper = styled.div({
+  width: PAGE_CONTENT_WRAPPER_WIDTH,
+  maxWidth: '100%',
+})
 
 export function Page({ appPaddingTopBottom }) {
   return (
     <Container appPadding={appPaddingTopBottom}>
-      <TopOfPage>
-        <Header />
+      <ContentWrapper>
+        <Header pageContentWrapperWidth={PAGE_CONTENT_WRAPPER_WIDTH} />
         <Presentation />
-      </TopOfPage>
-      <Footer />
+        <Footer />
+      </ContentWrapper>
     </Container>
   )
 }

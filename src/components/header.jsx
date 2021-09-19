@@ -9,12 +9,10 @@ const { playfairDisplay, helveticaNeue } = fonts
 
 const Container = styled.section({
   padding: '16px 0',
-  display: 'flex',
-  justifyContent: 'center',
 })
 
-const ContentsWrapper = styled.div({
-  width: 380,
+const Content = styled.div(({ headerContentWidth }) => ({
+  width: headerContentWidth,
   maxWidth: '100%',
   display: 'flex',
   flexWrap: 'wrap',
@@ -23,7 +21,7 @@ const ContentsWrapper = styled.div({
     justifyContent: 'center',
     alignItems: 'flex-end',
   },
-})
+}))
 
 const HeadingsWrapper = styled.div({
   padding: 8,
@@ -45,7 +43,7 @@ const SubHeading = styled.h2({
   textTransform: 'uppercase',
   lineHeight: 2,
   [mobileScreen]: {
-    fontSize: fontSizes.sm,
+    fontSize: fontSizes.mobileSm,
   },
 })
 
@@ -58,10 +56,12 @@ const Image = styled.img({
   borderRadius: '200% 50%',
 })
 
-export function Header() {
+export function Header({ pageContentWrapperWidth }) {
+  const headerContentWidth = (pageContentWrapperWidth / 3) * 2
+
   return (
     <Container>
-      <ContentsWrapper>
+      <Content headerContentWidth={headerContentWidth}>
         <ImageWrapper>
           <Image src={ellen} />
         </ImageWrapper>
@@ -69,7 +69,7 @@ export function Header() {
           <Heading>Ellen Styrélius</Heading>
           <SubHeading>front-end web developer</SubHeading>
         </HeadingsWrapper>
-      </ContentsWrapper>
+      </Content>
     </Container>
   )
 }
