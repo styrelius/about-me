@@ -7,8 +7,7 @@ import { fonts, fontSizes, linkStyles } from '../styles/styles'
 const { helveticaNeue } = fonts
 
 const Container = styled.section({
-  width: 560,
-  maxWidth: '100%',
+  width: '100%',
   padding: '24px 0',
   display: 'flex',
   flexDirection: 'column',
