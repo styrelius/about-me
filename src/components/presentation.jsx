@@ -32,6 +32,10 @@ const FirstWords = styled.span({
   fontFamily: fonts.playfairDisplay,
 })
 
+const Spacer = styled.div({
+  height: 24,
+})
+
 const Link = styled.a({
   ...linkStyles,
 })
@@ -43,10 +47,16 @@ export function Presentation() {
         <FirstWords>Hi, I'm Ellen</FirstWords> - web developer obsessed with most things UX.
         Passionate about clean, readable, testable code, and elegant user-friendly interfaces. I
         also have a Bachelor of Fine Arts.
-        <PresentationText>
-          If I get to choose I prefer working with React, TypeScript and some CSS-in-JS solution.
-        </PresentationText>
       </PresentationText>
+      <PresentationText>
+        Fan of typed systems and encapsulated components, who really enjoys figuring out how to
+        build scalable front-end architecture.
+      </PresentationText>
+      <PresentationText>
+        When I don't write code I like to spend my time drawing, sewing, going to exhibitions or
+        having dinner with friends.
+      </PresentationText>
+      <Spacer />
       <PresentationText>
         <FirstWords>Currently: </FirstWords>
         <Link target="_blank" href="https://www.hedvig.com/">
