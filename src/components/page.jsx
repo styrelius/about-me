@@ -13,7 +13,7 @@ export const PAGE_CONTENT_WRAPPER_WIDTH = 560
 const Container = styled.div`
   background: ${colors.beige};
   width: 100%;
-  min-height: calc(100vh - (${({ appPadding }) => appPadding}px * 2));
+  min-height: 100vh;
   padding: 64px 72px;
   display: flex;
   flex-direction: column;
@@ -28,9 +28,9 @@ const ContentWrapper = styled.div({
   maxWidth: '100%',
 })
 
-export function Page({ appPaddingTopBottom }) {
+export function Page() {
   return (
-    <Container appPadding={appPaddingTopBottom}>
+    <Container>
       <ContentWrapper>
         <Header pageContentWrapperWidth={PAGE_CONTENT_WRAPPER_WIDTH} />
         <Presentation />
