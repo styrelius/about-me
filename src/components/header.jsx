@@ -16,7 +16,8 @@ const Content = styled.div(({ headerContentWidth }) => ({
   maxWidth: '100%',
   display: 'flex',
   flexWrap: 'wrap',
-  justifyContent: 'space-between',
+  alignItems: 'flex-end',
+  justifyContent: 'start',
   [mobileScreen]: {
     justifyContent: 'center',
     alignItems: 'flex-end',
@@ -24,7 +25,7 @@ const Content = styled.div(({ headerContentWidth }) => ({
 }))
 
 const HeadingsWrapper = styled.div({
-  padding: 8,
+  padding: '0 16px',
 })
 
 const Heading = styled.h1({
@@ -47,12 +48,8 @@ const SubHeading = styled.h2({
   },
 })
 
-const ImageWrapper = styled.div({
-  padding: 8,
-})
-
 const Image = styled.img({
-  height: 100,
+  height: 96,
   borderRadius: '200% 50%',
 })
 
@@ -62,9 +59,7 @@ export function Header({ pageContentWrapperWidth }) {
   return (
     <Container>
       <Content headerContentWidth={headerContentWidth}>
-        <ImageWrapper>
-          <Image src={ellen} />
-        </ImageWrapper>
+        <Image src={ellen} />
         <HeadingsWrapper>
           <Heading>Ellen Styrélius</Heading>
           <SubHeading>front-end web developer</SubHeading>
