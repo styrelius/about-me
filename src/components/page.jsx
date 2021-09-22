@@ -32,7 +32,7 @@ export function Page() {
   return (
     <Container>
       <ContentWrapper>
-        <Header pageContentWrapperWidth={PAGE_CONTENT_WRAPPER_WIDTH} />
+        <Header />
         <Presentation />
         <Footer />
       </ContentWrapper>

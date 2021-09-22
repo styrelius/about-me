@@ -11,9 +11,8 @@ const Container = styled.section({
   padding: '16px 0',
 })
 
-const Content = styled.div(({ headerContentWidth }) => ({
-  width: headerContentWidth,
-  maxWidth: '100%',
+const Content = styled.div({
+  width: '100%',
   display: 'flex',
   flexWrap: 'wrap',
   alignItems: 'flex-end',
@@ -22,7 +21,7 @@ const Content = styled.div(({ headerContentWidth }) => ({
     justifyContent: 'center',
     alignItems: 'flex-end',
   },
-}))
+})
 
 const HeadingsWrapper = styled.div({
   padding: '0 16px',
@@ -53,12 +52,10 @@ const Image = styled.img({
   borderRadius: '200% 50%',
 })
 
-export function Header({ pageContentWrapperWidth }) {
-  const headerContentWidth = (pageContentWrapperWidth / 3) * 2
-
+export function Header() {
   return (
     <Container>
-      <Content headerContentWidth={headerContentWidth}>
+      <Content>
         <Image src={ellen} />
         <HeadingsWrapper>
           <Heading>Ellen Styrélius</Heading>
