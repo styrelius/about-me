@@ -14,7 +14,7 @@ const Container = styled.div`
   background: ${colors.beige};
   width: 100%;
   min-height: 100vh;
-  padding: 80px 72px;
+  padding: 80px 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
