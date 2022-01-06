@@ -21,6 +21,8 @@ export const fontSizes = {
   mobileLg: 28,
 }
 
+export const spacingBaseValue = 8
+
 const { black, darkGrey } = colors
 const { helveticaNeue } = fonts
 

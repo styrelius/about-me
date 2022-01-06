@@ -1,12 +1,14 @@
 import styled from 'styled-components/macro'
 
+import { spacingBaseValue } from '../../styles/styles'
+
 type Sizes = Record<Props['size'], number>
 
 const sizes: Sizes = {
-  xs: 4,
-  sm: 8,
-  md: 24,
-  lg: 48,
+  xs: spacingBaseValue / 2,
+  sm: spacingBaseValue,
+  md: spacingBaseValue * 3,
+  lg: spacingBaseValue * 6,
 }
 
 type Props = {
