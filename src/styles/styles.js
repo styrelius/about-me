@@ -1,7 +1,7 @@
 export const colors = {
   black: '#21201F',
   offWhite: '#FDFCFA',
-  beige: '#FBF8ED',
+  beige: '#F5F0E1',
   darkGrey: '#605D59',
   lavender: '#E9E7F2',
   salmon: '#FCEBDF',
