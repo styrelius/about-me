@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components/macro'
 
-import { colors } from '../styles/styles'
+import { colors, spacingBaseValue } from '../styles/styles'
 import { mobileScreen } from '../styles/media-queries'
 
 import { Header } from './header'
@@ -26,6 +25,9 @@ const Container = styled.div`
 const ContentWrapper = styled.div({
   width: PAGE_CONTENT_WRAPPER_WIDTH,
   maxWidth: '100%',
+  display: 'grid',
+  gridTemplateRows: '1fr auto 1.5fr',
+  gap: spacingBaseValue * 5,
 })
 
 export function Page() {

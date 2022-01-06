@@ -9,7 +9,6 @@ const { helveticaNeue } = fonts
 
 const Container = styled.section({
   width: '100%',
-  padding: '24px 0',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',

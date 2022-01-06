@@ -1,14 +1,17 @@
 import styled from 'styled-components/macro'
 
+import { spacingBaseValue } from '../styles/styles'
+
 import { GetInTouch } from './get-in-touch'
 import { LinksList } from './links-list'
 
 const Container = styled.section({
-  paddingTop: 56,
+  padding: '24px 0',
   display: 'grid',
   gridAutoFlow: 'row',
-  gap: 40,
+  gap: spacingBaseValue * 5,
   justifyContent: 'center',
+  alignSelf: 'end',
 })
 
 export function Footer() {

@@ -7,9 +7,7 @@ import { fonts, fontSizes } from '../styles/styles'
 
 const { playfairDisplay, helveticaNeue } = fonts
 
-const Container = styled.section({
-  padding: '16px 0',
-})
+const Container = styled.section({})
 
 const Content = styled.div({
   width: '100%',
