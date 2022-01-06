@@ -45,14 +45,14 @@ export function Presentation() {
   return (
     <Container>
       {paragraphs.map((paragraph, index) => (
-        <PresentationTextWrapper>
+        <PresentationTextWrapper key={paragraph}>
           {index === 0 && <FirstWords>{intro + ' '}</FirstWords>}
           <PresentationText>{paragraph}</PresentationText>
         </PresentationTextWrapper>
       ))}
       <Spacer />
       {infoAboutMe.map(({ label, value, location, link }) => (
-        <PresentationTextWrapper>
+        <PresentationTextWrapper key={label}>
           <PresentationText>
             <FirstWords>{label + ': '}</FirstWords>
             <Link target="_blank" href={link}>
