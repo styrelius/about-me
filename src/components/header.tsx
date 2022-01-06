@@ -3,7 +3,9 @@ import styled from 'styled-components/macro'
 
 import ellen from '../assets/ellen.jpg'
 import { mobileScreen } from '../styles/media-queries'
-import { fonts, fontSizes } from '../styles/styles'
+import { fonts, fontSizes, spacingBaseValue } from '../styles/styles'
+
+import { Spacer } from './shared/spacer'
 
 const { playfairDisplay, helveticaNeue } = fonts
 
@@ -20,25 +22,27 @@ const Container = styled.section({
   [mobileScreen]: {
     justifyContent: 'center',
     alignItems: 'flex-end',
+    rowGap: spacingBaseValue * 2,
   },
 })
 const HeadingsWrapper = styled.div({
-  padding: '0 16px',
+  display: 'grid',
+  gap: spacingBaseValue,
 })
 const Heading = styled.h1({
   fontFamily: playfairDisplay,
   fontSize: fontSizes.lg,
   fontWeight: 200,
+  lineHeight: 1,
   [mobileScreen]: {
     fontSize: fontSizes.mobileLg,
   },
 })
 const SubHeading = styled.h2({
   fontFamily: helveticaNeue,
-  fontSize: fontSizes.sm,
+  fontSize: fontSizes.md,
   fontWeight: 200,
-  textTransform: 'uppercase',
-  lineHeight: 2,
+  lineHeight: 1,
   [mobileScreen]: {
     fontSize: fontSizes.mobileSm,
   },
@@ -70,9 +74,10 @@ export function Header() {
           width={IMAGE_SIZE}
         />
       </ImageContainer>
+      <Spacer size="md" />
       <HeadingsWrapper>
         <Heading>Ellen Styrélius</Heading>
-        <SubHeading>front-end web developer</SubHeading>
+        <SubHeading>Front-end web developer</SubHeading>
       </HeadingsWrapper>
     </Container>
   )
