@@ -9,19 +9,20 @@ import { Footer } from './footer'
 
 export const PAGE_CONTENT_WRAPPER_WIDTH = 560
 
-const Container = styled.div`
-  background: ${colors.beige};
-  width: 100%;
-  min-height: 100vh;
-  padding: 80px 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  ${mobileScreen} {
-    padding: 48px 16px;
-  }
-`
+const Container = styled.div({
+  background: colors.beige,
+  width: '100%',
+  minHeight: '100vh',
+  padding: `${spacingBaseValue * 10}px ${spacingBaseValue * 6}px`,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  [mobileScreen]: {
+    padding: `${spacingBaseValue * 6}px ${spacingBaseValue * 3}px`,
+  },
+})
+
 const ContentWrapper = styled.div({
   width: PAGE_CONTENT_WRAPPER_WIDTH,
   maxWidth: '100%',
