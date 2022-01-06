@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 
 import ellen from '../assets/ellen.jpg'
@@ -7,9 +7,11 @@ import { fonts, fontSizes } from '../styles/styles'
 
 const { playfairDisplay, helveticaNeue } = fonts
 
-const Container = styled.section({})
+type ImageContainerProps = {
+  hasImageLoaded: boolean
+}
 
-const Content = styled.div({
+const Container = styled.section({
   width: '100%',
   display: 'flex',
   flexWrap: 'wrap',
@@ -20,11 +22,9 @@ const Content = styled.div({
     alignItems: 'flex-end',
   },
 })
-
 const HeadingsWrapper = styled.div({
   padding: '0 16px',
 })
-
 const Heading = styled.h1({
   fontFamily: playfairDisplay,
   fontSize: fontSizes.lg,
@@ -33,7 +33,6 @@ const Heading = styled.h1({
     fontSize: fontSizes.mobileLg,
   },
 })
-
 const SubHeading = styled.h2({
   fontFamily: helveticaNeue,
   fontSize: fontSizes.sm,
@@ -45,21 +44,36 @@ const SubHeading = styled.h2({
   },
 })
 
+const IMAGE_SIZE = 96
+
+const ImageContainer = styled.div<ImageContainerProps>(({ hasImageLoaded }) => ({
+  opacity: hasImageLoaded ? 1 : 0,
+  height: IMAGE_SIZE,
+  width: IMAGE_SIZE,
+  transition: 'opacity 1s ease-in-out',
+}))
 const Image = styled.img({
-  height: 96,
   borderRadius: '200% 50%',
 })
 
 export function Header() {
+  const [hasImageLoaded, setHasImageLoaded] = useState(false)
+
   return (
     <Container>
-      <Content>
-        <Image src={ellen} />
-        <HeadingsWrapper>
-          <Heading>Ellen Styrélius</Heading>
-          <SubHeading>front-end web developer</SubHeading>
-        </HeadingsWrapper>
-      </Content>
+      <ImageContainer hasImageLoaded={hasImageLoaded}>
+        <Image
+          src={ellen}
+          alt="Ellen waving"
+          onLoad={() => setHasImageLoaded(true)}
+          height={IMAGE_SIZE}
+          width={IMAGE_SIZE}
+        />
+      </ImageContainer>
+      <HeadingsWrapper>
+        <Heading>Ellen Styrélius</Heading>
+        <SubHeading>front-end web developer</SubHeading>
+      </HeadingsWrapper>
     </Container>
   )
 }
