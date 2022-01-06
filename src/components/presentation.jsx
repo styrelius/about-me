@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 
 import { mobileScreen } from '../styles/media-queries'
 import { fonts, fontSizes, linkStyles } from '../styles/styles'
+import { infoAboutMe, presentation } from '../text/presentation-text'
 
 const { helveticaNeue } = fonts
 
@@ -40,45 +41,28 @@ const Link = styled.a({
 })
 
 export function Presentation() {
+  const { intro, paragraphs } = presentation
+
   return (
     <Container>
-      <PresentationTextWrapper>
-        <FirstWords>Hi, I'm Ellen </FirstWords>
-        <PresentationText>
-          - web developer obsessed with most things UX. Passionate about clean, readable, testable
-          code, and elegant user-friendly interfaces. I also have a Bachelor of Fine Arts.
-        </PresentationText>
-      </PresentationTextWrapper>
-      <PresentationTextWrapper>
-        <PresentationText>
-          Fan of typed systems and encapsulated components, who really enjoys figuring out how to
-          build scalable front-end architecture.
-        </PresentationText>
-      </PresentationTextWrapper>
-      <PresentationTextWrapper>
-        <PresentationText>
-          When I don't write code I like to spend my time drawing, sewing, going to exhibitions or
-          having dinner with friends.
-        </PresentationText>
-      </PresentationTextWrapper>
+      {paragraphs.map((paragraph, index) => (
+        <PresentationTextWrapper>
+          {index === 0 && <FirstWords>{intro + ' '}</FirstWords>}
+          <PresentationText>{paragraph}</PresentationText>
+        </PresentationTextWrapper>
+      ))}
       <Spacer />
-      <PresentationTextWrapper>
-        <PresentationText>
-          <FirstWords>Currently: </FirstWords>
-          <Link target="_blank" href="https://www.hedvig.com/">
-            Hedvig
-          </Link>
-          , Stockholm
-        </PresentationText>
-      </PresentationTextWrapper>
-      <PresentationTextWrapper>
-        <PresentationText>
-          <FirstWords>Side project: </FirstWords>
-          <Link target="_blank" href="https://clay.so/">
-            Clay
-          </Link>
-        </PresentationText>
-      </PresentationTextWrapper>
+      {infoAboutMe.map(({ label, value, location, link }) => (
+        <PresentationTextWrapper>
+          <PresentationText>
+            <FirstWords>{label + ': '}</FirstWords>
+            <Link target="_blank" href={link}>
+              {value}
+            </Link>
+            {location && ', ' + location}
+          </PresentationText>
+        </PresentationTextWrapper>
+      ))}
     </Container>
   )
 }
