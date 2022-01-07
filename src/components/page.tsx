@@ -27,7 +27,7 @@ const ContentWrapper = styled.div({
   width: PAGE_CONTENT_WRAPPER_WIDTH,
   maxWidth: '100%',
   display: 'grid',
-  gridTemplateRows: 'auto auto 120px',
+  gridTemplateRows: 'auto auto 140px',
   gap: spacingBaseValue * 5,
 })
 
