@@ -3,6 +3,7 @@ export const colors = {
   offWhite: '#FDFCFA',
   beige: '#F5F0E1',
   darkGrey: '#605D59',
+  lightGrey: '#C2BCB5',
   lavender: '#E9E7F2',
   salmon: '#FCEBDF',
 }
