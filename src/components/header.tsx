@@ -15,7 +15,7 @@ type ImageContainerProps = {
 }
 const Container = styled.section({
   width: '100%',
-  paddingBottom: spacingBaseValue * 3,
+  paddingBottom: spacingBaseValue * 2,
   display: 'grid',
   gap: spacingBaseValue * 3,
   gridAutoFlow: 'row',
@@ -25,7 +25,7 @@ const ImageContainer = styled.div<ImageContainerProps>(({ hasImageLoaded }) => (
   opacity: hasImageLoaded ? 1 : 0,
   height: IMAGE_SIZE,
   width: IMAGE_SIZE,
-  transition: 'opacity 1s ease-in-out',
+  transition: 'opacity 0.4s ease-out',
 }))
 const Image = styled.img({
   borderRadius: '200% 50%',
