@@ -9,7 +9,7 @@ const Container = styled.section({
   padding: '24px 0',
   display: 'grid',
   gridAutoFlow: 'row',
-  gap: spacingBaseValue * 5,
+  gap: spacingBaseValue * 2,
   justifyContent: 'center',
   alignSelf: 'end',
 })

@@ -1,12 +1,9 @@
 import { Fragment } from 'react'
 import styled from 'styled-components/macro'
 
-import { colors, fonts, fontSizes, linkStyles } from '../styles/styles'
+import { fontSizes, linkStyles } from '../styles/styles'
 
 import { Spacer } from './shared/spacer'
-
-const { helveticaNeue } = fonts
-const { darkGrey } = colors
 
 const Container = styled.div({
   display: 'flex',
@@ -18,12 +15,6 @@ const Container = styled.div({
 const Link = styled.a({
   ...linkStyles,
   fontSize: fontSizes.sm,
-})
-
-const Divider = styled.span({
-  fontFamily: helveticaNeue,
-  fontSize: fontSizes.md,
-  color: darkGrey,
 })
 
 const links = [
@@ -41,9 +32,7 @@ export function LinksList() {
           </Link>
           {index < links.length - 1 && (
             <>
-              <Spacer size="sm" />
-              <Divider>|</Divider>
-              <Spacer size="sm" />
+              <Spacer size="sm" factor={2} />
             </>
           )}
         </Fragment>
