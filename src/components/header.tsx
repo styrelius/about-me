@@ -19,7 +19,7 @@ const Container = styled.section({
   display: 'grid',
   gap: spacingBaseValue * 3,
   gridAutoFlow: 'row',
-  borderBottom: '1px solid' + lightGrey,
+  borderBottom: `1px dotted ${lightGrey}}`,
 })
 const ImageContainer = styled.div<ImageContainerProps>(({ hasImageLoaded }) => ({
   opacity: hasImageLoaded ? 1 : 0,
