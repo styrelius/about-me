@@ -7,11 +7,15 @@ type Props = {
 
 const getFadeInAnimation = ({ durationInMs, positionShift }: Props) => {
   const fadeInWithSlide = keyframes`
-    from {
-      opactiy: 0;
+    0% {
+      opacity: 0;
       transform: translate(0, ${positionShift}px);
     }
-    to {
+    30% {
+      opacity: 0;
+      transform: translate(0, ${positionShift}px);
+    }
+    100% {
       opacity: 1;
       transform: translate(0);
     }
