@@ -25,7 +25,7 @@ const ImageContainer = styled.div<ImageContainerProps>(({ hasImageLoaded }) => (
   opacity: hasImageLoaded ? 1 : 0,
   height: IMAGE_SIZE,
   width: IMAGE_SIZE,
-  transition: 'opacity 0.4s ease-out',
+  transition: 'opacity 0.6s ease-out',
 }))
 const Image = styled.img({
   borderRadius: '200% 50%',
