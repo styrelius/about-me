@@ -5,6 +5,8 @@ import { mobileScreen } from '../styles/media-queries'
 import { fonts, fontSizes, linkStyles } from '../styles/styles'
 import { infoAboutMe, presentation } from '../text/presentation-text'
 
+import { FadeInContainer } from './shared/fade-in-container'
+
 const { helveticaNeue } = fonts
 
 const Container = styled.section({
@@ -12,7 +14,6 @@ const Container = styled.section({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  alignItems: 'center',
 })
 const PresentationTextWrapper = styled.div({
   width: '100%',
@@ -45,23 +46,31 @@ export function Presentation() {
   return (
     <Container>
       {paragraphs.map((paragraph, index) => (
-        <PresentationTextWrapper key={paragraph}>
-          {index === 0 && <FirstWords>{intro + ' '}</FirstWords>}
-          <PresentationText>{paragraph}</PresentationText>
-        </PresentationTextWrapper>
+        <FadeInContainer
+          key={paragraph}
+          durationInMs={600}
+          positionShift={16 + (paragraphs.length - index) * 20}
+        >
+          <PresentationTextWrapper>
+            {index === 0 && <FirstWords>{intro + ' '}</FirstWords>}
+            <PresentationText>{paragraph}</PresentationText>
+          </PresentationTextWrapper>
+        </FadeInContainer>
       ))}
       <Spacer />
-      {infoAboutMe.map(({ label, value, location, link }) => (
-        <PresentationTextWrapper key={label}>
-          <PresentationText>
-            <FirstWords>{label + ': '}</FirstWords>
-            <Link target="_blank" href={link}>
-              {value}
-            </Link>
-            {location && ', ' + location}
-          </PresentationText>
-        </PresentationTextWrapper>
-      ))}
+      <FadeInContainer positionShift={16}>
+        {infoAboutMe.map(({ label, value, location, link }) => (
+          <PresentationTextWrapper key={label}>
+            <PresentationText>
+              <FirstWords>{label + ': '}</FirstWords>
+              <Link target="_blank" href={link}>
+                {value}
+              </Link>
+              {location && ', ' + location}
+            </PresentationText>
+          </PresentationTextWrapper>
+        ))}
+      </FadeInContainer>
     </Container>
   )
 }
