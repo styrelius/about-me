@@ -31,7 +31,7 @@ export const linkStyles = {
   fontFamily: helveticaNeue,
   color: black,
   textDecoration: 'none',
-  borderBottom: '1px solid' + black,
+  borderBottom: `1px dotted ${black}`,
   ':hover, :focus': {
     color: darkGrey,
     borderColor: darkGrey,
