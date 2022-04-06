@@ -10,9 +10,9 @@ export const presentation = {
 export const infoAboutMe = [
   {
     label: 'Currently',
-    value: 'Hedvig',
+    value: 'Tink',
     location: 'Stockholm',
-    link: 'https://www.hedvig.com',
+    link: 'https://tink.com/',
   },
   {
     label: 'Side project',
