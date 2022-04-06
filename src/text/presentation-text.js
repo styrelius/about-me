@@ -15,6 +15,11 @@ export const infoAboutMe = [
     link: 'https://tink.com/',
   },
   {
+    label: 'Previously',
+    value: 'Hedvig',
+    link: 'https://hedvig.com/',
+  },
+  {
     label: 'Side project',
     value: 'Clay',
     link: 'https://clay.so',
