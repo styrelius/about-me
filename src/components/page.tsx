@@ -13,7 +13,7 @@ const Container = styled.div({
   background: colors.beige,
   width: '100%',
   minHeight: '100vh',
-  padding: `${spacingBaseValue * 10}px ${spacingBaseValue * 6}px`,
+  padding: `${spacingBaseValue * 14}px ${spacingBaseValue * 6}px`,
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',

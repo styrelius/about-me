@@ -10,15 +10,16 @@ const { lightGrey } = colors
 
 const Container = styled.section({
   width: '100%',
-  paddingBottom: spacingBaseValue * 2,
-  display: 'grid',
-  gap: spacingBaseValue * 3,
-  gridAutoFlow: 'row',
+  paddingBottom: spacingBaseValue,
+  display: 'flex',
+  justifyContent: 'space-between',
   borderBottom: `1px dotted ${lightGrey}}`,
 })
 const HeadingsWrapper = styled.div({
-  display: 'grid',
+  display: 'flex',
+  flexDirection: 'column',
   gap: spacingBaseValue,
+  justifyContent: 'flex-start',
 })
 const Heading = styled.h1({
   fontFamily: playfairDisplay,
@@ -42,11 +43,11 @@ const SubHeading = styled.h2({
 export function Header() {
   return (
     <Container>
-      <PictureOfMe />
       <HeadingsWrapper>
         <Heading>Ellen Styrélius</Heading>
         <SubHeading>Front-end web developer</SubHeading>
       </HeadingsWrapper>
+      <PictureOfMe />
     </Container>
   )
 }
