@@ -19,9 +19,4 @@ export const infoAboutMe = [
     value: 'Hedvig',
     link: 'https://hedvig.com/',
   },
-  {
-    label: 'Side project',
-    value: 'Clay',
-    link: 'https://clay.so',
-  },
 ]
